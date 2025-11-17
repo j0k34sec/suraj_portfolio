@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { PROJECTS } from '../constants';
 import type { Project } from '../types';
@@ -13,7 +14,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                 <p className="text-text-secondary text-sm mb-4 h-20 overflow-hidden">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map(tag => (
-                        <span key={tag} className="bg-primary border border-accent/30 text-accent text-xs font-medium px-2.5 py-1 rounded-full">
+                        <span key={tag} className="bg-primary border border-accent/30 text-accent text-xs font-medium px-2.5 py-1 rounded-full transition-all duration-300 hover:bg-accent/20 hover:border-accent hover:scale-105">
                             {tag}
                         </span>
                     ))}

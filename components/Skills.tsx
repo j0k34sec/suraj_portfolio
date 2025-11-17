@@ -1,3 +1,4 @@
+
 import React from 'react';
 import TerminalWindow from './TerminalWindow';
 import { SKILL_CATEGORIES } from '../constants';
@@ -16,7 +17,7 @@ const Skills: React.FC = () => {
                 <h3 className="text-xl font-semibold text-accent mb-4 border-b-2 border-accent/30 pb-2">{category.title}</h3>
                 <ul className="space-y-3">
                   {category.skills.map((skill) => (
-                    <li key={skill.name} className="flex items-center gap-3 text-text-secondary hover:text-text-primary transition-colors duration-200">
+                    <li key={skill.name} className="flex items-center gap-3 text-text-secondary hover:text-text-primary transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
                       {skill.icon}
                       <span>{skill.name}</span>
                     </li>

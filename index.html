@@ -24,9 +24,11 @@
           animation: {
             'glitch': 'glitch 1s linear infinite',
             'blink': 'blink 1.5s infinite',
+            'cursor-blink': 'cursor-blink 1s step-end infinite',
             'title-flicker': 'title-flicker 4s linear infinite',
             'icon-flicker': 'icon-flicker 4s linear infinite',
             'spin': 'spin 1s linear infinite',
+            'border-glow': 'border-glow 4s linear infinite alternate',
           },
           keyframes: {
             glitch: {
@@ -37,6 +39,18 @@
             blink: {
               '0%, 100%': { opacity: 1 },
               '50%': { opacity: 0.6 },
+            },
+            'cursor-blink': {
+              '0%, 100%': { opacity: '1' },
+              '50%': { opacity: '0' },
+            },
+            'border-glow': {
+              'from': {
+                boxShadow: '0 0 6px rgba(0, 255, 204, 0.2), inset 0 0 6px rgba(0, 255, 204, 0.1)',
+              },
+              'to': {
+                boxShadow: '0 0 12px rgba(0, 255, 204, 0.4), inset 0 0 8px rgba(0, 255, 204, 0.2)',
+              },
             },
             'title-flicker': {
               '0%, 18%, 22%, 25%, 53%, 57%, 100%': {

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Shield, Menu, X } from 'lucide-react';
 
@@ -48,8 +49,9 @@ const Header: React.FC = () => {
                     key={link.href}
                     href={link.href}
                     onClick={handleSmoothScroll}
-                    className="text-text-secondary hover:text-accent transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium"
+                    className="group text-text-secondary hover:text-accent transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium"
                 >
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity mr-0 group-hover:mr-1 duration-300 text-accent">&gt;</span>
                     {link.label}
                 </a>
             ))}

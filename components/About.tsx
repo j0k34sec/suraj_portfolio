@@ -1,3 +1,4 @@
+
 import React from 'react';
 import TerminalWindow from './TerminalWindow';
 import AnimatedSectionTitle from './AnimatedSectionTitle';
@@ -15,7 +16,7 @@ const About: React.FC = () => {
             With a proactive and analytical mindset, I specialize in both offensive and defensive security strategies. From simulating attacks as an ethical hacker to architecting robust defense mechanisms, I thrive in the dynamic, ever-evolving landscape of digital threats. My goal is to transform vulnerabilities into strengths and ensure the integrity and resilience of digital infrastructures.
           </p>
            <p className="text-text-primary leading-relaxed">
-            <span className="text-green-400 mr-2">root@portfolio:</span>~# <span className="animate-pulse">|</span>
+            <span className="text-green-400 mr-2">root@portfolio:</span>~# <span className="animate-cursor-blink">|</span>
           </p>
         </TerminalWindow>
       </div>
