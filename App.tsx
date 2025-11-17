@@ -11,7 +11,7 @@ import MatrixRain from './components/MatrixRain';
 
 const App: React.FC = () => {
     return (
-        <div className="bg-primary text-text-primary font-mono relative">
+        <div className="bg-primary text-text-primary font-mono">
             <MatrixRain />
             <div className="relative z-10">
                 <Header />
